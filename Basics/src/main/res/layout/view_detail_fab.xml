@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="end"
+    >
+
+    <LinearLayout
+        android:id="@+id/view_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/view_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_fab_text_light"
+            android:gravity="end"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textAlignment="textEnd"
+            android:textColor="#131313"
+            android:textStyle="bold" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/view_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/fab_l"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
+            android:foregroundTint="#000000"
+            android:foregroundTintMode="src_in"
+            app:backgroundTint="@color/fab_d" />
+
+    </LinearLayout>
+</merge>
